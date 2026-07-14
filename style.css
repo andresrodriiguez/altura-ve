@@ -728,11 +728,12 @@ body.loaded .ht:nth-child(6) span { transition-delay: 0.40s; }
   overflow: hidden;
 }
 .cta__title {
-  font-size: clamp(3.4rem, 14vw, 12rem);
+  font-size: clamp(2rem, 10vw, 12rem);
   font-weight: 900;
   font-stretch: 122%;
   line-height: 0.95;
   margin-bottom: clamp(40px, 5vw, 60px);
+  white-space: nowrap;
 }
 .cta__title .q {
   color: var(--yellow);
@@ -766,7 +767,8 @@ body.loaded .ht:nth-child(6) span { transition-delay: 0.40s; }
   overflow: hidden;
 }
 .footer__logo {
-  font-size: clamp(4rem, 18vw, 16rem);
+  font-size: clamp(2.4rem, 13.5vw, 16rem);
+  white-space: nowrap;
   font-weight: 900;
   font-stretch: 124%;
   line-height: 0.85;
