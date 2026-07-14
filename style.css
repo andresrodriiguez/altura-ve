@@ -434,11 +434,46 @@ body.loaded .ht:nth-child(6) span { transition-delay: 0.40s; }
   color: var(--ink);
   padding: clamp(13px, 2.2vw, 22px) clamp(22px, 4.6vw, 48px);
   font-size: clamp(0.72rem, 2.4vw, 1rem);
+  position: relative;
+  overflow: hidden;
+  animation: btn-float 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes btn-float {
+  0%, 100% {
+    transform: perspective(600px) translateY(0) rotateX(0deg);
+    box-shadow: 0 6px 14px -6px rgba(11,11,11,0.35);
+  }
+  50% {
+    transform: perspective(600px) translateY(-12px) rotateX(9deg);
+    box-shadow: 0 26px 34px -14px rgba(11,11,11,0.4);
+  }
+}
+.btn--big::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg,
+    transparent 32%,
+    rgba(255,255,255,0.65) 50%,
+    transparent 68%);
+  transform: translateX(-130%);
+  animation: btn-shine 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes btn-shine {
+  0%, 55% { transform: translateX(-130%) skewX(-12deg); }
+  85%, 100% { transform: translateX(130%) skewX(-12deg); }
 }
 .btn--big:hover {
   background: var(--ink);
   color: var(--yellow);
+  animation-play-state: paused;
   box-shadow: 0 16px 40px -12px rgba(11,11,11,0.5);
+}
+.btn--big:active {
+  transform: perspective(600px) scale(0.95) rotateX(-6deg);
+  animation: none;
 }
 
 /* ═══════════ MARQUEE ═══════════ */
