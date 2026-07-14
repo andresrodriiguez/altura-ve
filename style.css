@@ -432,8 +432,8 @@ body.loaded .ht:nth-child(6) span { transition-delay: 0.40s; }
 .btn--big {
   background: var(--yellow);
   color: var(--ink);
-  padding: 22px 48px;
-  font-size: 1rem;
+  padding: clamp(13px, 2.2vw, 22px) clamp(22px, 4.6vw, 48px);
+  font-size: clamp(0.72rem, 2.4vw, 1rem);
 }
 .btn--big:hover {
   background: var(--ink);
