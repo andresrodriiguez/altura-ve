@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALTURA — Subimos contigo</title>
+  <meta name="description" content="ALTURA · Diseños personalizados para tu día a día. Envíos nacionales desde Valencia, Venezuela. ¡Subimos contigo!" />
+  <meta property="og:title" content="ALTURA — Subimos contigo" />
+  <meta property="og:description" content="Diseños personalizados para tu día a día. Envíos a toda Venezuela." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0b'/%3E%3Cpath d='M32 14 18 50h8l6-17 6 17h8L32 14z' fill='%23f5d523'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__word">
+      <span>A</span><span>L</span><span>T</span><span class="pre-u">U</span><span>R</span><span>A</span>
+    </div>
+    <div class="preloader__bar"><i></i></div>
+    <div class="preloader__count" id="preCount">0</div>
+  </div>
+
+  <!-- ══════════ CURSOR ══════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="ALTURA inicio">
+      <span class="logo-word">ALT<span class="logo-u">U</span>RA</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#coleccion" data-hover>Colección</a>
+      <a href="#nosotros" data-hover>Nosotros</a>
+      <a href="#personalizados" data-hover>Personalizados</a>
+      <a href="#contacto" data-hover>Contacto</a>
+    </nav>
+    <a class="nav__cta magnetic" href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>
+      Escríbenos <span class="arrow">↗</span>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Menú"><i></i><i></i></button>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#coleccion">Colección</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#personalizados">Personalizados</a>
+    <a href="#contacto">Contacto</a>
+    <a class="mm-ig" href="https://instagram.com/altura.ve" target="_blank" rel="noopener">@altura.ve ↗</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="hero__lines" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <p class="hero__kicker reveal-up">Valencia · Venezuela — EST. streetwear con propósito</p>
+
+      <h1 class="hero__title" aria-label="ALTURA">
+        <span class="ht"><span>A</span></span><span class="ht"><span>L</span></span><span class="ht"><span>T</span></span><span class="ht ht--u"><span>U</span></span><span class="ht"><span>R</span></span><span class="ht"><span>A</span></span>
+      </h1>
+
+      <div class="hero__sub">
+        <p class="hero__tag reveal-up d1">¡Subimos <em>contigo</em>!</p>
+        <p class="hero__desc reveal-up d2">Diseños personalizados para tu día a día.<br/>Envíos a toda Venezuela.</p>
+      </div>
+
+      <div class="hero__foot reveal-up d3">
+        <a class="btn btn--solid magnetic" href="#coleccion" data-hover>Ver colección</a>
+        <a class="btn btn--ghost magnetic" href="https://instagram.com/altura.ve" target="_blank" rel="noopener" data-hover>Instagram ↗</a>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <i></i>
+      </div>
+
+      <div class="hero__big-bg" aria-hidden="true">ALTURA</div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee marquee--yellow" aria-hidden="true">
+      <div class="marquee__track">
+        <span>ENVÍOS NACIONALES ✦ DISEÑOS PERSONALIZADOS ✦ SUBIMOS CONTIGO ✦ HECHO EN VENEZUELA ✦&nbsp;</span>
+        <span>ENVÍOS NACIONALES ✦ DISEÑOS PERSONALIZADOS ✦ SUBIMOS CONTIGO ✦ HECHO EN VENEZUELA ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ MANIFIESTO ══════════ -->
+    <section class="manifesto" id="nosotros">
+      <p class="section-label reveal-up">( Nosotros )</p>
+      <h2 class="manifesto__text split-words">
+        No es solo ropa. Es la actitud de subir un poco más alto cada día — en la pista, en la calle, en la vida.
+      </h2>
+      <div class="manifesto__meta">
+        <div class="reveal-up"><b>01</b><p>Prendas pensadas para moverte: correr, trabajar y resolver.</p></div>
+        <div class="reveal-up d1"><b>02</b><p>Cada diseño se hace contigo, a tu medida y a tu estilo.</p></div>
+        <div class="reveal-up d2"><b>03</b><p>Desde Valencia para todo el país, con envíos nacionales.</p></div>
+      </div>
+    </section>
+
+    <!-- ══════════ COLECCIÓN ══════════ -->
+    <section class="collection" id="coleccion">
+      <div class="collection__head">
+        <p class="section-label reveal-up">( Colección )</p>
+        <h2 class="collection__title reveal-up d1">Lo esencial,<br/><em>elevado.</em></h2>
+      </div>
+
+      <div class="collection__grid">
+
+        <!-- Card: Oliva -->
+        <article class="card reveal-up" data-tilt>
+          <div class="card__stage" style="--tone:#5c6136; --tone2:#4a4f2b;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body" d="M60 40 L82 30 Q100 42 118 30 L140 40 L166 62 L150 84 L138 74 L138 168 L62 168 L62 74 L50 84 L34 62 Z"/>
+              <text x="100" y="105" class="tee__mark">ALTURA</text>
+            </svg>
+            <span class="card__num">01</span>
+          </div>
+          <div class="card__info">
+            <h3>Tee Oliva</h3>
+            <p>Algodón premium · unisex</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Pedir ↗</a>
+          </div>
+        </article>
+
+        <!-- Card: Azul -->
+        <article class="card reveal-up d1" data-tilt>
+          <div class="card__stage" style="--tone:#2450d8; --tone2:#1b3ea8;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body" d="M60 40 L82 30 Q100 42 118 30 L140 40 L166 62 L150 84 L138 74 L138 168 L62 168 L62 74 L50 84 L34 62 Z"/>
+              <text x="100" y="105" class="tee__mark">ALTURA</text>
+            </svg>
+            <span class="card__num">02</span>
+          </div>
+          <div class="card__info">
+            <h3>Dry-Fit Azul</h3>
+            <p>Tela deportiva · running</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Pedir ↗</a>
+          </div>
+        </article>
+
+        <!-- Card: Negro -->
+        <article class="card reveal-up d2" data-tilt>
+          <div class="card__stage" style="--tone:#1a1a1a; --tone2:#0d0d0d;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body tee__body--crop" d="M60 40 L82 30 Q100 42 118 30 L140 40 L166 62 L150 84 L138 74 L138 140 L62 140 L62 74 L50 84 L34 62 Z"/>
+              <text x="100" y="95" class="tee__mark tee__mark--light">ALTURA</text>
+            </svg>
+            <span class="card__num">03</span>
+          </div>
+          <div class="card__info">
+            <h3>Crop Negro</h3>
+            <p>Corte moderno · dama</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Pedir ↗</a>
+          </div>
+        </article>
+
+        <!-- Card: Blanca -->
+        <article class="card reveal-up" data-tilt>
+          <div class="card__stage" style="--tone:#f2f0ea; --tone2:#dcd9cf;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body tee__body--long" d="M60 40 L82 30 Q100 42 118 30 L140 40 L172 62 L158 86 L140 76 L140 168 L60 168 L60 76 L42 86 L28 62 Z"/>
+              <text x="100" y="105" class="tee__mark tee__mark--dark">ALTURA</text>
+            </svg>
+            <span class="card__num">04</span>
+          </div>
+          <div class="card__info">
+            <h3>Manga Larga UV</h3>
+            <p>Protección solar · outdoor</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Pedir ↗</a>
+          </div>
+        </article>
+
+        <!-- Card: Windbreaker -->
+        <article class="card reveal-up d1" data-tilt>
+          <div class="card__stage" style="--tone:#9a9a96; --tone2:#7d7d79;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body" d="M60 38 L84 28 L100 40 L116 28 L140 38 L170 60 L156 86 L140 76 L140 170 L60 170 L60 76 L44 86 L30 60 Z"/>
+              <path class="tee__zip" d="M100 42 L100 168"/>
+              <text x="100" y="105" class="tee__mark">ALTURA</text>
+            </svg>
+            <span class="card__num">05</span>
+          </div>
+          <div class="card__info">
+            <h3>Windbreaker Gris</h3>
+            <p>Rompeviento ligero</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Pedir ↗</a>
+          </div>
+        </article>
+
+        <!-- Card: Personalizada -->
+        <article class="card card--custom reveal-up d2" data-tilt>
+          <div class="card__stage" style="--tone:#f5d523; --tone2:#e0c114;">
+            <svg class="tee" viewBox="0 0 200 200" aria-hidden="true">
+              <path class="tee__body" d="M60 40 L82 30 Q100 42 118 30 L140 40 L166 62 L150 84 L138 74 L138 168 L62 168 L62 74 L50 84 L34 62 Z"/>
+              <text x="100" y="100" class="tee__mark tee__mark--dark tee__mark--q">?</text>
+            </svg>
+            <span class="card__num">06</span>
+          </div>
+          <div class="card__info">
+            <h3>Tu diseño</h3>
+            <p>100% personalizada</p>
+            <a href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>Crear la mía ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════ MARQUEE 2 ══════════ -->
+    <div class="marquee marquee--dark" aria-hidden="true">
+      <div class="marquee__track marquee__track--rev">
+        <span>CORRE ✦ TRABAJA ✦ RESUELVE ✦ SUBE ✦&nbsp;</span>
+        <span>CORRE ✦ TRABAJA ✦ RESUELVE ✦ SUBE ✦&nbsp;</span>
+        <span>CORRE ✦ TRABAJA ✦ RESUELVE ✦ SUBE ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ PERSONALIZADOS ══════════ -->
+    <section class="custom" id="personalizados">
+      <p class="section-label section-label--light reveal-up">( Personalizados )</p>
+      <h2 class="custom__title reveal-up d1">TU DISEÑO.<br/><span class="stroke">TU ALTURA.</span></h2>
+
+      <ol class="custom__steps">
+        <li class="reveal-up">
+          <span class="step-num">01</span>
+          <h3>Escríbenos</h3>
+          <p>Cuéntanos tu idea por DM: colores, texto, logo o lo que imagines.</p>
+        </li>
+        <li class="reveal-up d1">
+          <span class="step-num">02</span>
+          <h3>Diseñamos contigo</h3>
+          <p>Te enviamos la propuesta y la ajustamos hasta que sea perfecta.</p>
+        </li>
+        <li class="reveal-up d2">
+          <span class="step-num">03</span>
+          <h3>Te llega a tu puerta</h3>
+          <p>Producimos tu prenda y la enviamos a cualquier parte del país.</p>
+        </li>
+      </ol>
+
+      <div class="custom__stats">
+        <div class="reveal-up"><b data-count="100">0</b><span>% personalizable</span></div>
+        <div class="reveal-up d1"><b data-count="24">0</b><span>estados con envío</span></div>
+        <div class="reveal-up d2"><b data-count="549">0</b><span>+ personas que suben</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════ CTA FINAL ══════════ -->
+    <section class="cta" id="contacto">
+      <div class="cta__inner">
+        <p class="section-label reveal-up">( ¿Hablamos? )</p>
+        <h2 class="cta__title reveal-up d1">¿SUBIMOS<span class="q">?</span></h2>
+        <div class="cta__actions reveal-up d2">
+          <a class="btn btn--big magnetic" href="https://ig.me/m/altura.ve" target="_blank" rel="noopener" data-hover>
+            Escríbenos por Instagram ↗
+          </a>
+          <a class="cta__ig" href="https://instagram.com/altura.ve" target="_blank" rel="noopener" data-hover>@altura.ve</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer__logo" aria-hidden="true">ALT<span class="logo-u logo-u--big">U</span>RA</div>
+    <div class="footer__row">
+      <p>© <span id="year">2026</span> ALTURA · Valencia, Venezuela</p>
+      <p>¡Subimos contigo! ✦</p>
+      <a href="https://instagram.com/altura.ve" target="_blank" rel="noopener" data-hover>Instagram ↗</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
